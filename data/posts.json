@@ -1,0 +1,84 @@
+[
+    {
+        "id": "0",
+        "imgsrc": "",
+        "altcolor": "#cccccc",
+        "height": 200,
+        "author": "돌이아트",
+        "title": "스티로폼 피규어",
+        "heart": 105,
+        "sells": true,
+        "cost": 16000,
+        "tag": [
+            "스티로폼",
+            "피규어",
+            "헤드에이크",
+            "아무거나",
+            "이것저것",
+            "예이",
+            "야호",
+            "호롤롤",
+            "태그2"
+        ]
+    },
+    {
+        "id": "1",
+        "imgsrc": "",
+        "altcolor": "#ccaa77",
+        "height": 250,
+        "author": "김채현",
+        "title": "병뚜껑 드림캐쳐",
+        "heart": 76,
+        "sells": true,
+        "cost": 8000,
+        "tag": [
+            "병뚜껑",
+            "드림캐쳐"
+        ]
+    },
+    {
+        "id": "2",
+        "imgsrc": "",
+        "altcolor": "#aa77cc",
+        "height": 200,
+        "author": "권소희",
+        "title": "생분해 플라스틱",
+        "heart": 26,
+        "sells": false,
+        "cost": 0,
+        "tag": [
+            "생분해",
+            "플라스틱"
+        ]
+    },
+    {
+        "id": "3",
+        "imgsrc": "",
+        "altcolor": "#77ccaa",
+        "height": 150,
+        "author": "강두경",
+        "title": "이것저것",
+        "heart": 1,
+        "sells": false,
+        "cost": 0,
+        "tag": [
+            "아무거나",
+            "이것저것"
+        ]
+    },
+    {
+        "id": "4",
+        "imgsrc": "",
+        "altcolor": "#77ccaa",
+        "height": 100,
+        "author": "강두경",
+        "title": "이것저것 2",
+        "heart": 4,
+        "sells": false,
+        "cost": 0,
+        "tag": [
+            "아무거나",
+            "이것저것"
+        ]
+    }
+]
