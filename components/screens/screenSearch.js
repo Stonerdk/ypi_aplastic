@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, StyleSheet, TextInput, Component} from 'react-native';
+import CheckBox from '@react-native-community/checkbox'
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Hashtag from '../Hashtag'
 
@@ -13,7 +14,10 @@ const ScreenSearch = () => {
     const [title, setTitle] = useState("");
     const [author, setAuthor] = useState("");
     const [currentTag, setCurrentTag] = useState("");
-    const [tags, setTags] = useState(["tag1", "tag2"]);
+    const [tags, setTags] = useState([]);
+    const [filterSell, setFilterSell] = useState(true);
+    const [filterNoSell, setFilterNoSell] = useState(true);
+    //0 : both, 1 : sell, 2 : doesn't sell
     return (
         <View>
             <View style={styles.barContainer}>
@@ -75,6 +79,24 @@ const ScreenSearch = () => {
                     );})
                 }
             </View>
+
+            <View style = {styles.filterSellWrapper}>
+                <Text style = {{
+                    marginRight: 6,
+                    fontSize: 16,
+                    fontWeight : 'bold'
+                }}>
+                    판매 여부
+                </Text>
+                <CheckBox value = {filterSell} onValueChange = {setFilterSell} style = {{alignSelf: "center"}}/>
+                <Text>
+                    판매함  
+                </Text>
+                <CheckBox value = {filterNoSell} onValueChange = {setFilterNoSell} style = {{alignSelf: "center", marginLeft: 4}}/>
+                <Text>
+                    판매하지 않음
+                </Text>
+            </View>
         </View>
     );
 }
@@ -98,7 +120,6 @@ const styles = StyleSheet.create({
         height: 40,
         alignItems: "center",
         flexDirection: "row",
-        marginHorizontal: 12,
         marginTop: 6
     },
     barIcon: {
@@ -109,6 +130,13 @@ const styles = StyleSheet.create({
     },
     hashtagsWrapper: {
         flexDirection: "row",
-        flexWrap: "wrap"
+        flexWrap: "wrap",
+        marginHorizontal: 12
+    },
+    filterSellWrapper : {
+        flexDirection: "row",
+        marginHorizontal: 14,
+        alignItems: "center",
+        marginTop : 6
     }
 });
