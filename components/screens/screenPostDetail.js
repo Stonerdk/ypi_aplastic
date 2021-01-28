@@ -6,9 +6,9 @@ import {
     Text,
     StyleSheet
 } from 'react-native';
-import posts from "../data/posts"
-import CustomButton from "./CustomButton.js"
-import Hashtag from "./Hashtag.js"
+import posts from "../../data/posts"
+import CustomButton from "../CustomButton.js"
+import Hashtag from "../Hashtag.js"
 const postData = posts
  
 const renderItem = ({item}) => {

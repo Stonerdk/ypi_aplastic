@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import PostDetail from '../PostDetail'
-import PostPreview from '../PostPreview'
+import PostDetail from './screenPostDetail'
 import ScreenSearch from './screenSearch'
 const Stack = createStackNavigator()
 
