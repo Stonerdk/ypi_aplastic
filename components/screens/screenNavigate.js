@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import PostDetail from './screenPostDetail'
 import ScreenSearch from './screenSearch'
+
 const Stack = createStackNavigator()
 
 function screenNavAll() {
@@ -51,7 +52,7 @@ function screenNavigate() {
                 fontSize: 24,
                 alignSelf: 'center'
             },
-            headerLeft: () => (btnMenu(navigation))
+            headerLeft: ()=>(btnMenu(navigation))
         })}>
             <Stack.Screen name="Navigate" component = {screenNavAll} 
                 options = {({navigation})=>({

@@ -5,6 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import screenMarket from './components/screens/screenMarket';
 import screenMypage from './components/screens/screenMypage';
 import screenNavigate from './components/screens/screenNavigate';
+import screenCampaign from './components/screens/screenCampaign';
+import screenClass from './components/screens/screenClass'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 const Tab = createBottomTabNavigator()
@@ -20,7 +22,7 @@ export default class App extends Component {
           initialRouteName = "Navigate"
           tabBarOptions={{
             tintColor: '#CCCCCC',
-            activeTintColor: '#e91e63',
+            activeTintColor: '#1a8572',
             inactiveTintColor: 'gray',
             showIcon: true
           }}
@@ -31,6 +33,10 @@ export default class App extends Component {
                 iconName = focused ? 'ios-navigate-circle' : 'ios-navigate-circle-outline';
               } else if (route.name == 'Market') {
                 iconName = focused ? 'ios-basket' : 'ios-basket-outline';
+              } else if (route.name == 'Campaign') {
+                iconName = focused ? 'ios-megaphone' : 'ios-megaphone-outline'
+              } else if (route.name == 'Class') {
+                iconName = focused ? 'ios-bulb' : 'ios-bulb-outline'
               } else if (route.name == 'Mypage') {
                 iconName = focused ? 'ios-person-circle' : 'ios-person-circle-outline';
               } 
@@ -42,7 +48,10 @@ export default class App extends Component {
           >
           <Tab.Screen name = "Navigate" component = {screenNavigate} />
           <Tab.Screen name = "Market" component = {screenMarket} />
+          <Tab.Screen name = "Campaign" component = {screenCampaign} />
+          <Tab.Screen name = "Class" component = {screenClass} />
           <Tab.Screen name = "Mypage" component = {screenMypage}  />
+
         </Tab.Navigator>
       </NavigationContainer>
     );
