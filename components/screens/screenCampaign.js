@@ -93,18 +93,6 @@ const RecycleGuideElement = (item) => {
     )
 }
 
-// const RecycleGuide = () => {
-    
-//     return (
-//         <View style = {{marginHorizontal:12}}>
-//             <FlatList
-//                 data = {dataList}
-//                 renderItem = {RecycleGuideElement}
-//                 keyExtractor = {(item) => item.text[0]} />
-//         </View>
-//     )
-// }
-
 function screenCampaignBody() {
     return (
         <ScrollView>
@@ -123,10 +111,6 @@ function screenCampaignBody() {
             {
                 recycleList.map((item) => RecycleGuideElement(item))
             }
-            {/* <FlatList
-                data = {recycleList}
-                renderItem = {RecycleGuideElement}
-                keyExtractor = {(item) => item.text[0]} /> */}
         </ScrollView>
     );
 }

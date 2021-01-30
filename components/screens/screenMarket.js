@@ -3,7 +3,6 @@ import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-nativ
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator()
-
 const mainTitle = "옥션"
 
 const btnMenu = (navigation) => (
@@ -16,11 +15,36 @@ const btnMenu = (navigation) => (
     </TouchableOpacity>
 
 )
+function ScreenMarketbyType () {
+    return (<View>
 
+    </View>)
+}
+
+function ScreenMarketbyCenter() {
+    return (<View>
+
+    </View>)
+}
 function screenMarketBody() {
     return (
         <View>
+
         </View>
+        // <TopTab.Navigator
+        //     initialRouteName = "종류로 보기"
+        //     tabBarOptions = {{
+        //         activeTintColor: '#1a8572',
+        //         inactiveTintColor: '#f8f8f8',
+        //     }}>
+        //     <TopTab.Screen
+        //         name = "종류로 보기"
+        //         component = {ScreenMarketbyType}
+        //     />
+        //     <TopTab.Screen
+        //         name = "장소로 보기"
+        //         compoennt = {ScreenMarketbyCenter} />
+        // </TopTab.Navigator>
     );
 }
 

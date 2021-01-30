@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import PostDetail from './screenPostDetail'
@@ -9,9 +9,9 @@ const Stack = createStackNavigator()
 
 function screenNavAll() {
     return (
-        <View>
+        <ScrollView>
             <PostDetail />
-        </View>
+        </ScrollView>
     );
 }
 

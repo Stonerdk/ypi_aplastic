@@ -4,7 +4,8 @@ import {
     FlatList,
     Component,
     Text,
-    StyleSheet
+    StyleSheet,
+    ScrollView
 } from 'react-native';
 import posts from "../../data/posts"
 import CustomButton from "../CustomButton.js"
@@ -104,14 +105,17 @@ const styles = StyleSheet.create({
     }
 })
 
-const PostDetail = () => {
+const PostDetail = ({data}) => {
     return (
         <View>
-            <FlatList
-                data = {postData}
+            {/* <FlatList
+                data = {!data ? postData : data}
                 renderItem = {renderItem}
                 keyExtractor = {(item) => item.id}
-            />
+            /> */}
+            {
+                postData.map(item => renderItem({item}))
+            }
         </View>
     )
 }
